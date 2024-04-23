@@ -1,0 +1,28 @@
+
+h2{
+    color: purple;
+    background-color: red;
+    font-size: 80px;
+}
+#topheader{
+    background: grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#topheader a {
+    color: black;
+    text-decoration: none;
+}
+#header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.topmenu{ 
+    text-align: center;
+}
+#mainmenu{
+    background: rgb(236, 159, 16);
+}
+
+
