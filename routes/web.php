@@ -31,3 +31,5 @@ Route::get('manage/category',[App\Http\Controllers\HomeController::class, 'getMa
 
 Route::get('product/add',[App\Http\Controllers\HomeController::class, 'getAddProduct'])->name('getAddProduct');
 Route::post('product/add',[App\Http\Controllers\HomeController::class, 'postAddProduct'])->name('postAddProduct');
+Route::get('delete/category/{category}',[App\Http\Controllers\HomeController::class, 'getDeleteCategory'])->name('getDeleteCategory');
+Route::get('edit/category/{category}',[App\Http\Controllers\HomeController::class, 'getEditCategory'])->name('getEditCategory');

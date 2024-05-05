@@ -9,9 +9,9 @@
 
                 <div class="card-body">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
                     @endif
 
                     <table class="table">
@@ -28,7 +28,9 @@
                             <td><img src="{{asset('uploads/category/'.$item->photo)}}" alt="" width="80"></td>
                             <td>{{$item->name}}</td>
                             <td>{{$item->status}}</td>
-                            <td><a href="">Edit</a> | <a href="">Delete</a> </td>
+                            <td><a href="{{route('getEditCategory',$item->id)}}">Edit</a> | <a
+                                    href="{{route('getDeleteCategory',$item->id)}}">Delete</a>
+                            </td>
                         </tr>
                         @endforeach
                     </table>

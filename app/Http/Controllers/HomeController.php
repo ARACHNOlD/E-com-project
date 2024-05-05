@@ -73,5 +73,14 @@ class HomeController extends Controller
         
         $category->save();
         return redirect()->back()->with('status', 'Category added successfully');
+        
+    }
+    public function getDeleteCategory(Category $category){
+        $category->delete();
+        return redirect()->back()->with('status',$category->name.'Delete successfully '); 
+    }
+    public function getEditCategory(Category $category){
+        $data =['category'=>$category];
+       return view('admin.category.edit',$data);
     }
 }
